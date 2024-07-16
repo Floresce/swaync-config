@@ -8,6 +8,16 @@ I would recommend running swaync with `GTK_DEBUG=interactive swaync` using GTK's
 ## Setup
 Install [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter) and [Pywal](https://github.com/dylanaraps/pywal) using your package manager
 
+Add these rules to your Hyprland config
+```
+layerrule = blur, swaync-control-center
+layerrule = blur, swaync-notification-window
+layerrule = ignorezero, swaync-control-center
+layerrule = ignorezero, swaync-notification-window
+layerrule = ignorealpha 0.5, swaync-control-center
+layerrule = ignorealpha 0.5, swaync-notification-window
+```
+
 1. Clone repository
 ```
 git clone https://github.com/Floresce/swaync-config.git
