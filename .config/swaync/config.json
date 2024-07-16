@@ -1,0 +1,66 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "layer-shell": true,
+  "cssPriority": "user",
+
+  "control-center-width": 380,
+  "control-center-height": 860,
+  "control-center-margin-top": 8,
+  "control-center-margin-bottom": 8,
+  "control-center-margin-right": 8,
+  "control-center-margin-left": 8,
+
+  "notification-window-width": 400,
+  "notification-icon-size": 48,
+  "notification-body-image-height": 160,
+  "notification-body-image-width": 200,
+
+  "widgets": [
+    "buttons-grid",
+    "title",
+    "dnd",
+    "notifications",
+    "mpris"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "Clear All"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "label": {
+      "max-lines": 1,
+      "text": " "
+    },
+    "mpris": {
+      "image-size": 60,
+      "image-radius": 12
+    },
+    "buttons-grid": {
+      "actions": [
+	      {
+          "label": " ",
+          "command": "nm-connection-editor"
+        },
+        {
+          "label": "󰂯",
+          "command": "blueman-manager"
+	      },
+	      {
+          "label": "󰏘",
+          "command": "nwg-look"
+        },
+        {
+          "label": "⏻",
+          "command": "wlogout"
+        }
+      ]
+    }
+  }
+}
